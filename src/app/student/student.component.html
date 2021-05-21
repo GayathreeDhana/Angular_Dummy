@@ -1,0 +1,11 @@
+<label>name:</label>
+<input type="text" [(ngModel)]="student.name"/>
+<br>
+<label>marks:</label>
+<input type="text" [(ngModel)]="student.marks"/>
+<button (click)="onSubmit()" >Submit</button>
+
+Added : {{name}}
+
+<app-confirmation [student]="studentCopy" (displayed)="confirmDisplay($event)"></app-confirmation>
+
